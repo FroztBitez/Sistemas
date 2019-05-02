@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<title>Character Information</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Link para W3.CSS-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--Link para Fontes-->
+<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Indie+Flower|Just+Another+Hand" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Link Icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style>
+/*Estilizando a fonte*/
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Archivo Narrow', sans-serif;}
+body, html {
+  height: 100%;
+  color: #0c000c;
+  line-height: 2;
+}
+/* Parallax */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Tablet e celular sem Parallax (Não sei se funciona) */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+/* Logo HOME */
+.bgimg-1 {
+  background-image: url("https://file.toyhou.se/images/3949640_fmbeexQgedtROOd.png?1529093844");
+  min-height: 100%;
+}
+/* Logo IMAGES */
+.bgimg-2 {
+  background-image: url("https://file.toyhou.se/images/3949457_RBV0B0HXErf123y.png?1529093783");
+  min-height: 400px;
+}
+/* Logo STATS */
+.bgimg-3 {
+  background-image: url("https://file.toyhou.se/images/8749871_0bnaqAI78vIWr2z.png");
+  min-height: 400px;
+}
+/*Espaçamento*/
+.w3-wide {letter-spacing: 15px;}
+.w3-hover-opacity {cursor: pointer;}
+</style>
+<body>
+
+  <!-- Navbar de cima -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button w3-hover-black"><i class="fas fa-home"></i> HOME</a>
+      <a href="#propaganda" class="w3-bar-item w3-button w3-hide-small w3-hover-black"><i class="fas fa-users"></i> OUR COMMUNITY</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-black"><i class="fas fa-user"></i> ABOUT</a>
+      <a href="#stats" class="w3-bar-item w3-button w3-hide-small w3-hover-black"><i class="fas fa-question-circle"></i> STATS</a>
+      <a href="#images" class="w3-bar-item w3-button w3-hide-small w3-hover-black"><i class="fas fa-images"></i> IMAGES</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black"><i class="fas fa-search"></i></a>
+    </div>
+
+    <!-- Navbar pra tela pequena (não sei se da certo) -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#propaganda" class="w3-bar-item w3-button" onclick="toggleFunction()">COMMUNITY</a>
+      <a href="#stats" class="w3-bar-item w3-button" onclick="toggleFunction()">STATS</a>
+      <a href="#images" class="w3-bar-item w3-button" onclick="toggleFunction()">IMAGES</a>
+      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
+  </div>
+
+  <!-- LOGO -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">THE ENDER</span>
+    </div>
+  </div>
+
+  <!-- ACTION LANDING -->
+  <div class="w3-content w3-container w3-padding-64" id="propaganda">
+    <h3 class="w3-center w3-xxlarge"><b>OUR COMMUNITY</b></h3>
+    <h3 class="w3-center"><b>Toyhou.se</b> is a website for the display and trading of adoptable,
+      commissioned and other personal characters or fursonas, and roleplay involving them.</h3>
+      <h3 class="w3-center"><button class="w3-button w3-xxlarge w3-purple w3-hover-white"><h2><b>JOIN OUR COMMUNITY TODAY!!</b></h2></button></h3>
+      <h4 class="w3-center">Over ten million users!</h4>
+      <h4 class="w3-center">Get a pack of 20 free access codes to give your friends! Don't forget to retrive these codes today!</h4>
+      <h4 class="w3-center"><b>Decorate your character profile pages with CSS skins and much more.</b></h4>
+      <br>
+
+    </div>
+
+
+
+
+    <!-- ABOUT -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center w3-xxlarge"><b>ABOUT THEM</b></h3>
+      <p class="w3-center"><em>I'll watch...watch as you destroy all you've created...watch as everything, every single speck of life burns away in a great fire.</em></p>
+      <p><b>The Ender</b> is a fictional character created by me for a Fantasy RPG with my friends, it has canine aspects and a very strong set of horns. This creature is considered a deity and has unknown and unlimited sources of power, their power is par with a neutronic star, meaning it could tore a void open in the middle of the universe and suck everything around it. Most religions and cults fear this "god", since every single time their appeared was to cause utmost destruction to everything and everyone. Almost nothing is known about their personality or how did they come into be, the few who were actually approached by them are offered deals of power and money, with very dangerous prices. For the RPG, The Ender is one of the last "bosses" to fight against the party, the group fo players have the choice to fight or not, since the quest resolves around finding and galaxy stone hidden away in the creature's lair.
+        If the option of fighting is choosen by the party, the players must be over level 60 and have legendary equips, as well as buffs and lots of healing lapents. The fight is over when the players manage to trap the creature inside the galaxy stone, they cannot defeat it otherwise.</p>
+        <div class="w3-row">
+          <div class="w3-col m6 w3-center w3-padding-large">
+            <img src="https://file.toyhou.se/images/3949507_gfWeMUrTeG9iYGF.png?1529093783" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="ProfileArt" width="500" height="333">
+          </div>
+
+          <!-- ABOUT 2 (LATERAL) -->
+          <div class="w3-col m6 w3-padding-large">
+            <p>This creature is used to help the party deafeat the last boss of the campaign, <b>The Void.</b> Once inside the galaxy stone, the players can use some of the powers provided by The Ender. This is a unique way to reach the end, and can only be achieved by a lvl 60+ party.
+              After the end of the campaign, the creature reveals it actually went along in being captured because it deemed them worthy of destroying The Void, it gives them all divine equips and new skills, opening a portal to somewhere and wishing everyone a good ending.</p>
+              <p>In the aftermath, once the summoner class player reaches <b>lvl 100</b>, it can summon a copy of this creature to use it's skills and help in battle. It has half the health of the player and 20 turns to use, this number may change according to the <b>tablemaster.</b></p>
+            </div>
+          </div>
+
+          <!-- LOGO Stats -->
+          <div class="bgimg-3 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+            </div>
+          </div>
+
+          <!-- STATS -->
+          <div class="w3-content w3-container w3-padding-64" id="stats">
+            <h3 class="w3-center w3-xxlarge"><b>STATS</b></h3>
+            <p class="w3-center"><em>Attributes and abilities.</em></p><br>
+            <p class="w3-center"><b>ATTRIBUTES</b></p>
+            <p class="w3-content">STRENGTH</p>
+            <div class="w3-light-grey">
+              <div class="w3-container w3-padding-20 w3-purple w3-center" style="width:95%">95%</div>
+            </div>
+            <p class="w3-content">CONSTITUTION</p>
+            <div class="w3-light-grey">
+              <div class="w3-container w3-padding-20 w3-deep-purple w3-center" style="width:85%">85%</div>
+            </div>
+            <p class="w3-content">DEXTERITY</p>
+            <div class="w3-light-grey">
+              <div class="w3-container w3-padding-20 w3-purple w3-center" style="width:90%">90%</div>
+            </div>
+            <p class="w3-content">INTELLIGENCE</p>
+            <div class="w3-light-grey">
+              <div class="w3-container w3-padding-20 w3-deep-purple w3-center" style="width:100%">100%</div>
+            </div>
+            <p class="w3-content">WISDOM</p>
+            <div class="w3-light-grey">
+              <div class="w3-container w3-padding-20 w3-purple w3-center" style="width:100%">100%</div>
+            </div>
+            <p class="w3-content">CHARISMA</p>
+            <div class="w3-light-grey">
+              <div class="w3-container w3-padding-20 w3-deep-purple w3-center" style="width:32%">32%</div>
+            </div>
+            <br>
+            <p class="w3-center"><b>To understand more about role-playing attributes, please visit our <a href="https://en.wikipedia.org/wiki/Attribute_(role-playing_games)" target="_blank">guide.</a></b></p>
+
+
+            <br>
+            <br>
+            <p class="w3-center"><b>ABILITIES</b></p>
+            <p class="w3-content"><b>Phasing</b></p>
+            <p class="w3-content">Allows themselves to change their body atoms to pass through things and living beings, can also be used to avoid attacks.</p>
+            <br>
+            <p class="w3-content"><b>Teleportation</b></p>
+            <p class="w3-content">This method allows them to travel great distances through aura concentration, they fast foward their body at light speed to change places. It cost a great deal of stamina.</p>
+            <br>
+            <p class="w3-content"><b>Shape Shifting</b></p>
+            <p class="w3-content">They can change their body molecules to accomodate new shapes, big or smaller than their current size, the only drawback is that they cannot change color, making most of the new shapes unnatural and easily recognizable.</p>
+            <br>
+            <p class="w3-content"><b>Elemental call-forthing</b></p>
+            <p class="w3-content">Can manipulate fire, ice and lightining as well as create atttacks based on this 3 elements, others elements are most just basic attacks. </p>
+            <br>
+            <p class="w3-content"><b>Void Breaker</b></p>
+            <p class="w3-content">Most powerful attack, creates a concentrated sphere/beam of pure energy and launches at full force at the enemy, the results are very catastrophic. This attack is also used to create powerful wormholes that devour everything around. </p>
+            <br>
+            <p class="w3-content"><b>Big Bangs</b></p>
+            <p class="w3-content">With a great concentration of energy, they can channel it to their horns and unleash a massive explosion, similar to a small big bang. This can also be applied to stars and other celest beings. </p>
+            <br>
+            <br>
+
+          </div>
+
+          <!-- LOGO IMAGES -->
+          <div class="bgimg-2 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+            </div>
+          </div>
+
+          <!-- IMAGES -->
+          <div class="w3-content w3-container w3-padding-64" id="images">
+            <h3 class="w3-center w3-xxlarge"><b>IMAGES</b></h3>
+            <p class="w3-center"><em>Here are some of their best arts, made by all kind of artists.<br> Click on the images to make them bigger and see the proper credits.</em></p><br>
+
+            <!-- Responsive Images para telas pequenas -->
+            <div class="w3-row-padding w3-center">
+              <div class="w3-col m3">
+                <img src="https://file.toyhou.se/images/3949521_oE1pyC0G4H0DdrZ.png?1529093844" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Made by Ghailat">
+              </div>
+
+              <div class="w3-col m3">
+                <img src="https://file.toyhou.se/images/3949552_FJTUFRNwQZhAUt3.png?1529093844" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Made by Honey-Beest">
+              </div>
+
+              <div class="w3-col m3">
+                <img src="https://file.toyhou.se/images/3949648_bqFfH5EiKJ9L4Ld.jpg?1529093844" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Made by Dekuya">
+              </div>
+
+              <div class="w3-col m3">
+                <img src="https://file.toyhou.se/images/3949457_RBV0B0HXErf123y.png?1529093783" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Made by Arjello">
+              </div>
+            </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+              <div class="w3-col m3">
+                <img src="https://file.toyhou.se/images/3949507_gfWeMUrTeG9iYGF.png?1529093783" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Made by Crashydelflou">
+              </div>
+
+              <div class="w3-col m3">
+                <img src="https://file.toyhou.se/images/3949640_fmbeexQgedtROOd.png?1529093844" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Made by themefinland">
+              </div>
+
+              <div class="w3-col m3">
+                <img src="https://file.toyhou.se/images/8749871_0bnaqAI78vIWr2z.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Made by Froztbite">
+              </div>
+
+              <div class="w3-col m3">
+                <img src="https://file.toyhou.se/images/3949698_GqLMbfIVFehxiLH.png?1529093844" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Made by mutanteparasitex">
+              </div>
+
+              <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+            </div>
+          </div>
+
+          <!-- Imagem grande (modal)-->
+          <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+              <img id="img01" class="w3-image">
+              <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+          </div>
+
+
+          <!-- Footer -->
+          <footer class="w3-center w3-black w3-padding-64 ">
+            <a href="#home" class="w3-button w3-white"><i class="fas fa-arrow-up"></i></a>
+            <p>Character created by Maria Bortolozzo, all rights reserved.</p>
+          </footer>
+
+          <script>
+          // Modal Image Gallery
+          function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+          }
+          // Change style of navbar on scroll
+          window.onscroll = function() {myFunction()};
+          function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+              navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+              navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+          }
+          // Used to toggle the menu on small screens when clicking on the menu button
+          function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+            } else {
+              x.className = x.className.replace(" w3-show", "");
+            }
+          }
+          </script>
+
+        </body>
+        </html>
